@@ -1,0 +1,17 @@
+{
+    "name": "cricl/desafio-backendjr",
+    "autoload": {
+        "psr-4": {
+            "Cricl\\DesafioBackendjr\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "PzLeMoNBR",
+            "email": "marciogabrieloficial@hotmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
