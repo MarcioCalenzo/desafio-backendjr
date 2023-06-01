@@ -51,3 +51,8 @@ Certifique-se de que o XAMPP esteja configurado corretamente e os serviços do A
 Se desejar acessar o projeto por uma URL diferente de http://localhost/desafio-backendjr/php/, ajuste a URL de acordo com a configuração do seu ambiente.
 
 Agora você está pronto para executar o projeto Desafio Backend Jr em seu ambiente local!
+
+Caso tenha qualquer duvida sobre a aplicaçao não hesite em me procurar 
+email: marciogabrieloficial@hotmail.com
+wpp/telefone: +55 21 98071-3406
+linkedin: https://www.linkedin.com/in/marciocalenzo/
