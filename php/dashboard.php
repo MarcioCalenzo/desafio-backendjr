@@ -131,6 +131,9 @@ if (isset($_GET['getData'])) {
         <button type="submit">Logout</button>
     </form>
 <?php endif ?>
-
+<br>
+<form action="index.php" method="GET">
+        <button type="submit" name="">Voltar para o import de CSV</button>
+    </form>
 </body>
 </html>

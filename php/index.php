@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_FILES['csv_file']['type'] === 'te
         <input type="submit" value="Importar Arquivo CSV">
     </form>
     <br>
-    <form action="dashboard.php" method="POST">
+    <form action="dashboard.php" method="GET">
         <button type="submit">Redirecionar para a autenticação para obter o JSON</button>
     </form>
 </body>
