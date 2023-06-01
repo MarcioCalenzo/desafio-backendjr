@@ -78,6 +78,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_FILES['csv_file']['type'] === 'te
 
     $fileCsvImporter = new CSVImporter($host, $username, $password, $database);
     $fileCsvImporter->importCSVFile($csvFile);
+} elseif ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    echo 'Arquivo invalido' ;
 }
 
 ?>
@@ -92,6 +94,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $_FILES['csv_file']['type'] === 'te
     <form method="POST" enctype="multipart/form-data">
         <input type="file" name="csv_file" accept=".csv">
         <input type="submit" value="Importar Arquivo CSV">
+    </form>
+    <br>
+    <form action="dasboard.php" method="POST">
+        <button type="submit">Redirecionar para a autenticação para obter o JSON</button>
     </form>
 </body>
 </html>
