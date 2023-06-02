@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub OAuth Integration POC</title>
+  </head>
+
+  <body>
+    <div class="loginGithub">
+      <h1>Deseja logar?</h1>
+      <button class="login" onclick="habilitarLogin()">
+        Logar com o GitHub
+      </button>
+    </div>
+
+    <div class="logadoGithub" style="display: none">
+      <h1></h1>
+      <button id="logadoId" class="GetJson">Obter Dados!</button>
+    </div>
+
+    <h1>Upload de Arquivo CSV</h1>
+    <form id="csvForm" enctype="multipart/form-data">
+      <input type="file" name="csvFile" id="csvFile" />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
