@@ -16,7 +16,7 @@ Certifique-se de ter o XAMPP instalado em sua máquina. Você pode baixá-lo em 
 
 2. Clone este repositório dentro da pasta `htdocs` dentro do XAMPP. Você pode fazer isso através do comando `git clone` ou baixando o repositório como um arquivo ZIP e descompactando-o em `htdocs` e garanta que esteja dentro da pasta php para rodar o projeto.
 
-3. Execute o comando composer install para instalar as dependências do projeto. Certifique-se de ter o Composer instalado em sua máquina. Você pode baixá-lo em https://getcomposer.org/download/.
+3. Execute o comando ```composer install``` para instalar as dependências do projeto. Certifique-se de ter o Composer instalado em sua máquina. Você pode baixá-lo em https://getcomposer.org/download/.
 
 4. Crie um arquivo .env na raiz do projeto com base no arquivo .env.example fornecido. Você pode fazer isso copiando o conteúdo do .env.example para o novo arquivo .env e preenchendo as informações do banco de dados , sendo necessario criar antes o banco de dados para o projeto .
 
