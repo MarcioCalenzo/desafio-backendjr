@@ -25,12 +25,29 @@ window.onload = async () => {
         code,
       });
       const user = response.data;
-      habilitarLogin(user);
+      console.log(user);
+      Login(user);
     } catch (err) {
       console.log("err", err);
     }
   }
 };
+
+document.getElementById("logadoId").addEventListener("click", function (event) {
+  event.preventDefault();
+
+  axios
+    .get("http://localhost:3000/persons")
+    .then(function (response) {
+      const jsonString = JSON.stringify(response.data);
+      document.open();
+      document.write(jsonString);
+      document.close();
+    })
+    .catch(function (error) {
+      console.error(error);
+    });
+});
 
 document.getElementById("csvForm").addEventListener("submit", function (event) {
   event.preventDefault();
@@ -60,24 +77,7 @@ document.getElementById("csvForm").addEventListener("submit", function (event) {
   }
 });
 
-document.getElementById("logadoId").addEventListener("click", function (event) {
-  event.preventDefault();
-
-  axios
-    .get("http://localhost:3000/persons")
-    .then(function (response) {
-      const jsonString = JSON.stringify(response.data);
-      console.log(jsonString);
-      document.open();
-      document.write(jsonString);
-      document.close();
-    })
-    .catch(function (error) {
-      console.error(error);
-    });
-});
-
-function habilitarLogin(data) {
+function Login(data) {
   const loginDiv = document.querySelector(".loginGithub");
   const logadoDiv = document.querySelector(".logadoGithub");
 
@@ -86,7 +86,7 @@ function habilitarLogin(data) {
   logadoDiv.querySelector("h1").textContent = `Bem vindo , ${data.name} !`;
 }
 
-function desfazerLogin() {
+function Logout() {
   const loginDiv = document.querySelector(".loginGithub");
   const logadoDiv = document.querySelector(".logadoGithub");
 
