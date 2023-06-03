@@ -25,10 +25,9 @@ window.onload = async () => {
         code,
       });
       const user = response.data;
-      console.log(user);
       Login(user);
     } catch (err) {
-      console.log("err", err);
+      console.error(err);
     }
   }
 };
