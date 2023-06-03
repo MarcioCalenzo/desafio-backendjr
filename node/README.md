@@ -22,6 +22,37 @@ Observação: Neste projeto, para facilitar para o usuário, não é necessário
 
 Agora você está pronto para executar o projeto Desafio Backend Jr em seu ambiente local! Abra o navegador e acesse a URL [http://localhost:1234/](http://localhost:1234/).
 
+# Documetaçao da API 
+
+## Rotas
+
+A API oferece as seguintes rotas:
+
+- `api/users/`
+
+  - `POST` - Cadastrar um usuario.
+  - `GET` - Listar o seu usuario e se for admin listar todos os usuarios.
+
+- `api/users/id`
+
+  - `PATCH` - Atualizar os dados do seu user ou se for admin atualizar os dados de qualquer user.
+  - `DELETE` - Excluir o seu user ou se for admin excluir um user especifico.
+
+- `api/login/`
+
+  - `POST` - Fazer o login.
+
+- `api/persons/`
+
+  - `POST` - Colocar um arquivo `.csv` no banco de dados.
+  - `GET` - Pegar os dados armazenados e trazer como um JSON.
+
+- `api/tokengit/`
+
+  - `GET` - Filtrar um pet específico.
+  - `PATCH` - Atualizar os dados de um pet específico.
+  - `DELETE` - Excluir um pet específico.
+
 
 Caso tenha qualquer duvida sobre a aplicaçao não hesite em me procurar 
 email: marciogabrieloficial@hotmail.com
